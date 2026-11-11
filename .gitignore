@@ -1,0 +1,17 @@
+node_modules/
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Local system files
+.DS_Store
+Thumbs.db
+
+# Debug logs
+npm-debug.log*

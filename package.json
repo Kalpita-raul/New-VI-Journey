@@ -1,0 +1,15 @@
+{
+  "name": "new-vi-journey",
+  "version": "1.0.0",
+  "private": true,
+  "description": "UAT automation for the Van Insurance quote journey through addons",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.0",
+    "@types/node": "^22.10.0"
+  }
+}

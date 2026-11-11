@@ -1,0 +1,51 @@
+/**
+ * VLD-style happy-path data (aligned with VLD Automation Project / vld-quote.spec.ts).
+ * Current automation stops on Your Cover before Get Quotes (UAT session-wrong issue).
+ */
+export const testData = {
+  van: {
+    registration: 'SK14 YOO',
+    purchaseYear: '2026',
+    purchaseMonth: 'January',
+    value: '1000',
+    seats: '3',
+    overnightPostcode: 'GU14DA',
+    racking: false,
+    tracking: false,
+    parkedOvernight: 'garage' as 'garage' | 'driveway' | 'road',
+    signWritten: true,
+  },
+  aboutYou: {
+    maritalStatus: 'Single or co-habiting',
+    title: 'Mr',
+    firstName: 'TestQA',
+    surname: 'TestSurname',
+    dobDay: '15',
+    dobMonth: 'January',
+    dobYear: '1995',
+    occupationSearch: 'adv',
+    occupationOption: /Advertising Agent/,
+    businessSearch: 'adv',
+    businessOption: /^Advertising$/,
+    yearsLicenceHeld: '10',
+    noClaimsBonus: 'None',
+    accessOtherVehicles: 'None',
+    householdVehicles: /Only this van/,
+  },
+  cover: {
+    coverType: 'Fully Comprehensive',
+    annualMileage: '1,000 miles',
+    classOfUse: 'Carrying Own Goods for Work',
+    voluntaryExcess: 'No Excess',
+    hazardous: true,
+    policyStartDay: '15',
+    paymentMethod: 'Annually' as 'Annually' | 'Monthly',
+    homePostcode: 'GU14DA',
+    addressOption: /St\. Josephs Church Office/,
+    propertyType: /House or bungalow that you own/,
+    homeInsurance: /No home insurance held/,
+    phone: '7878787878',
+    email: 'testqa@example.com',
+    renewalAutoFetch: true,
+  },
+};
